@@ -1,5 +1,104 @@
+:root {
+  --primary-1:hsl(246, 96%, 39%);
+  --primary-2:hsl(240, 69%, 48%);
+  --primary-3:hsl(246, 49%, 42%);
+  --secondary-1:hsl(60deg, 50%, 30%);
+  --secondary-2:hsl(219, 79%, 66%);
+  --secondary-3:hsl(204, 54%, 77%);
+  --grey-1:hsl(184, 75%, 85%);
+  --grey-2:hsl(54, 67%, 94%);
+}
+
+html {
+  font-size: 20px;
+  line-height: 1.7;
+  padding: 0;
+}
+
+header {
+  min-height: 15rem;
+  margin: 0rem;
+}
+
+.card {
+  width: 18rem;
+  height: 25rem;
+}
+
+.jumbotron {
+  background-image: url("../imgs/backgound.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.jumbotron img {
+  width: 25%;
+  height: auto;
+  min-width: 100px;
+  max-width: 300px;
+}
+
+.cards {
+  padding-left: 1.5em;
+}
+
+nav {
+  width: 100%;
+  line-height: 3rem;
+}
+
+nav a {
+  color: var(--secondary-1);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
 .navbar {
-  background-color: cornflowerblue;
+  background-color: var(--secondary-2);
+  width: 100%;
+}
+
+.nav-link {
+  color: var(--primary-2);
+}
+
+.technology {
+  margin: 2rem;
+  border: var(--primary-1) solid 0.05rem;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.technology img {
+  margin: 1rem 1rem 1rem 1rem;
+  transform: scale(1);
+  transition: transform 1s ease;
+  max-width: 300px;
+}
+
+@media (max-width: 550px) {
+  header h1 {
+    line-height: 4rem;
+    padding: 2rem 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 0.5rem 1rem;
+    border-right: darkblue solid 0.4rem;
+    border-bottom: none;
+  }
+
+  .technology {
+    flex-direction: column;
+  }
+
+  .technology img {
+    margin: 1rem 1rem 1rem 1rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
