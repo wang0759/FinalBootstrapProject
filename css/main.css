@@ -66,14 +66,11 @@ nav a {
   border: var(--primary-1) solid 0.05rem;
   border-radius: 30px;
   display: flex;
-  flex-direction: row;
 }
 
 .technology img {
   margin: 1rem 1rem 1rem 1rem;
-  transform: scale(1);
-  transition: transform 1s ease;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 @media (max-width: 550px) {
