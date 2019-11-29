@@ -91,14 +91,6 @@ nav a {
     border-right: darkblue solid 0.4rem;
     border-bottom: none;
   }
-
-  .technology {
-    flex-direction: column;
-  }
-
-  .technology img {
-    margin: 1rem 1rem 1rem 1rem;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
