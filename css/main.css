@@ -31,10 +31,10 @@ header {
   background-repeat: no-repeat;
 }
 .jumbotron img {
-  width: 25%;
+  width: 20%;
   height: auto;
   min-width: 100px;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .cards {
@@ -71,23 +71,6 @@ nav a {
 .technology img {
   margin: 1rem 1rem 1rem 1rem;
   max-width: 200px;
-}
-
-@media (max-width: 550px) {
-  header h1 {
-    line-height: 4rem;
-    padding: 2rem 1rem;
-  }
-
-  nav {
-    flex-direction: column;
-  }
-
-  nav a {
-    margin: 0.5rem 1rem;
-    border-right: darkblue solid 0.4rem;
-    border-bottom: none;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
