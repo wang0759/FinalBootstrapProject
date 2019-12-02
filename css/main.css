@@ -1,12 +1,8 @@
 :root {
   --primary-1:hsl(246, 96%, 39%);
   --primary-2:hsl(240, 69%, 48%);
-  --primary-3:hsl(246, 49%, 42%);
   --secondary-1:hsl(60deg, 50%, 30%);
   --secondary-2:hsl(219, 79%, 66%);
-  --secondary-3:hsl(204, 54%, 77%);
-  --grey-1:hsl(184, 75%, 85%);
-  --grey-2:hsl(54, 67%, 94%);
 }
 
 html {
@@ -20,11 +16,6 @@ header {
   margin: 0rem;
 }
 
-.card {
-  width: 18rem;
-  height: 25rem;
-}
-
 .jumbotron {
   background-image: url("../imgs/backgound.jpg");
   background-size: 100%;
@@ -35,10 +26,7 @@ header {
   height: auto;
   min-width: 100px;
   max-width: 200px;
-}
-
-.cards {
-  padding-left: 1.5em;
+  border-radius: 50%;
 }
 
 nav {
@@ -78,7 +66,6 @@ nav a {
 @media (max-width: 600px) {
   .technology {
     flex-direction: column;
-    align-items: center;
   }
 }
 
