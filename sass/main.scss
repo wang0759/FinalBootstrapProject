@@ -1,5 +1,5 @@
-// logo sources: https://en.wikipedia.org/
-// logo sources: https://getbootstrap.com/
+// logo source: https://en.wikipedia.org/
+// logo source: https://getbootstrap.com/
 :root{
     --primary-1:hsl(246, 96%, 39%);
     --primary-2:hsl(240, 69%, 48%);
@@ -45,7 +45,9 @@
     font-size: 1.2rem;
   }
   
-
+// .card{
+//   max-width: 20rem;
+// }
 .navbar{
     background-color:var(--secondary-2);
     width:100%;
