@@ -1,0 +1,31 @@
+<!-- <?php
+$db=mysqli_connect('localhost','root','','test')
+or die('error connecting to MySQL server.');
+
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="connect.php" method="POST">
+        First Name:<input type="text" name="firstName" placeholder="First name">
+        <br>
+        Last Name:<input type="text" name="lastName" placeholder="Last name">
+        <br>
+        Email:<input type="email" name="email" id="Email1" placeholder="Enter email">
+        <br>
+        Cell:<input type="tel" name="telephone" id="tel" placeholder='Enter your phone number'>
+        <br>
+
+        <br>
+        <button type='submit' name='submit'>Submit</button>
+</body>
+
+</html>

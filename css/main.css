@@ -12,7 +12,7 @@ html {
 }
 
 header {
-  min-height: 15rem;
+  min-height: auto;
   margin: 0rem;
 }
 
