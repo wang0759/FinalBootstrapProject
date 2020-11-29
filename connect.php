@@ -1,8 +1,9 @@
 <?php
+phpinfo();
 $host = "localhost";
-$dbUsername = "root";
-$dbPassword = "";
-$dbname = "test";
+$dbUsername = "PHPSCRIPT";
+$dbPassword = "1234";
+$dbname = "portfolio";
 
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];

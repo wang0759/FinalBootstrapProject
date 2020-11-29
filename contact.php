@@ -1,3 +1,25 @@
+<?php
+
+function getPDO()
+{
+    $dbConnection = parse_ini_file("db_connection.ini");
+    extract($dbConnection);
+    $myPdo = new PDO($dsn, $user, $password);
+    $myPdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    return $myPdo;
+}
+
+$firstName = $_POST['firstName'];
+$lastName = $_POST['lastName'];
+$email = $_POST['email'];
+$telephone = $_POST['telephone'];
+
+$myPdo = getPDO();
+$sql = "INSERT Into contact (firstName, lastName, email, telephone) values
+( '$firstName','$lastName','$email','$telephone' )";
+$conn = $myPdo->query($sql);
+
+?>
 
 
 <!DOCTYPE html>
@@ -15,7 +37,9 @@
 
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
-      
+        <!-- <a class="navbar-brand" href="#"> -->
+        <!-- <img src="./imgs/html.png" width="40" height="40" class="d-inline-block align-top" alt=""> -->
+        <!-- </a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,6 +61,11 @@
     </br>
 
 
+    <!-- <div class="jumbotron jumbotron-fluid text-center">
+            <h1 class="display-3">Contact Me</h1>
+            </br>
+            <!-- <img src="./imgs/portaitMe.png" alt="avantar"> -->
+    </div> -->
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
